@@ -28,5 +28,7 @@ public:
 	virtual void BeginPlay() override;
 	
 	
-	
+	// Return an OUT parameter, true if hit landscape
+	bool GetSightRayHitLocation(FVector& HitLocation)  const;
+
 };
