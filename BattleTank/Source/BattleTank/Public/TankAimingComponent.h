@@ -2,6 +2,9 @@
 
 #pragma once
 
+#include "CollisionQueryParams.h"
+#include "DrawDebugHelpers.h"
+#include "Kismet/GameplayStatics.h"
 #include "GameFramework/Pawn.h"
 #include "Components/StaticMeshComponent.h"
 #include "CoreMinimal.h"
