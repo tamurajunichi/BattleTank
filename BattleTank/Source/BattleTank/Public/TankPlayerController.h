@@ -2,6 +2,8 @@
 
 #pragma once
 
+#include "Engine/World.h"
+
 #include "Tank.h"
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
@@ -33,6 +35,8 @@ private:
 	// Return an OUT parameter, true if hit landscape
 	bool GetSightRayHitLocation(FVector& HitLocation)  const;
 
+	bool GetLookHitVectorLocation(FVector LookDirection, FVector & HitLocation) const;
+
 	bool GetLookDirection(FVector2D ScreenLocation, FVector & LookDirection) const;
 
 	UPROPERTY(EditAnywhere)
@@ -41,4 +45,6 @@ private:
 	UPROPERTY(EditAnywhere)
 	float CrosshairYLocation = 0.33333;
 
+	UPROPERTY(EditAnywhere)
+	float LineTraceRange = 1000000;
 };
