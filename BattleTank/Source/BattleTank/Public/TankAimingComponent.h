@@ -2,12 +2,6 @@
 
 #pragma once
 
-#include "Math/Rotator.h"
-#include "CollisionQueryParams.h"
-#include "DrawDebugHelpers.h"
-#include "Kismet/GameplayStatics.h"
-#include "GameFramework/Pawn.h"
-#include "Components/StaticMeshComponent.h"
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "TankAimingComponent.generated.h"
